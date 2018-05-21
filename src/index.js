@@ -25,4 +25,4 @@ const addLongHelp = (parser, longHelp) => {
   }
 }
 
-export default addLongHelp
+module.exports = addLongHelp
