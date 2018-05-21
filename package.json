@@ -1,7 +1,7 @@
 {
   "name": "argparse-longhelp",
   "description": "Adds extra help text to an argparse instance",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/msikma/argparse-longhelp",
   "main": "src/index.js",
   "author": "Michiel Sikma <michiel@sikma.org>",
