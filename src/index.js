@@ -27,7 +27,9 @@ const addLongHelp = (parser, longHelp, removeLines) => {
       formatter.addArguments(actionGroup._groupActions)
       formatter.endSection()
     });
-    formatter.addText(parser.epilog)
+    // Add epilogue without reformatting the whitespace.
+    // Don't you DARE take away my linebreaks.
+    formatter._addItem(str => str, [parser.epilog])
     const formatted = formatter.formatHelp()
     return removeLines ? removeUnnecessaryLines(formatted) : formatted
   }
